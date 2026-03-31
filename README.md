@@ -1,6 +1,6 @@
 # Annotated Bambu Lab P2S Machine Start G-code
 
-Original and annotated versions of the default machine start (pre-print) G-code for the Bambu Lab P2S 3D printer, as shipped with Bambu Studio 2.5.0.66 (retrieved 2026-03-26).
+Original and annotated versions of the default machine start (pre-print) G-code for the Bambu Lab P2S 3D printer, as shipped with Bambu Studio 2.5.0.66 (G-code version 2026/02/26).
 
 ## Files
 
@@ -25,7 +25,7 @@ Original and annotated versions of the default machine start (pre-print) G-code 
 
 ## Known issues in stock G-code
 
-As of 2026-03-26 there are two issues present in stock G-code, as documented by community members:
+As of G-code version 2026/02/26 there are two issues present in stock G-code, as documented by community members:
 
 - **Redundant homing**: An unconditional `G28` after the bed leveling block re-homes every print even when ABL already homed ([source](https://github.com/scoofz/P2S-start-gcode))
 - **Noise reduction ordering**: `M982.2 S1` (cog noise reduction) is called before `M975 S1` (input shaping), but depends on it. Therefore it has no effect during the noisiest startup phases ([source](https://old.reddit.com/r/BambuLab/comments/1s8kneu/p2s_quirks_and_poorly_optimized_firmware_settings/))
